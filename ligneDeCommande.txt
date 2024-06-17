@@ -1,0 +1,17 @@
+// Exécuter tous les tests
+
+newman run Echo.postman_collection.json 
+
+// Exécuter les tests de dossier Utilities
+
+newman run Echo.postman_collection.json --folder "Utilities"
+
+// Exécuter les tests  en 3 itérations
+
+newman run Echo.postman_collection.json --folder "Utilities" --iteration-count 3
+
+// Génération des rapports json et Html 
+
+newman run Echo.postman_collection.json --folder "Utilities" --iteration-count 3 -r json,htmlextra
+
+
